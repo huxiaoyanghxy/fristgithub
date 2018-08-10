@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>我的第一个网页</title>
+<script>
+	var percent = 0;
+	var title = '我的第一个网页'
+	var timer = setInterval( function(){
+		if(percent >=100){
+			document.title = title;
+		}else{
+			percent = percent + 1;
+			document.title = '['+percent+'%]' + title;
+		}
+	},1000)
+	
+</script>
+</head>
+<h1>我的第一个网页</h1>
+<body>
+</body>
+</html>
